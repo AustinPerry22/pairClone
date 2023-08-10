@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<style>
+<!-- <style>
     body.debug .container,
     body.debug .container-fluid {
         outline: 2px double blue;
@@ -27,11 +27,11 @@
         outline: 2px dotted forestgreen;
         outline-offset: -3px;
     }
-</style>
+</style> -->
 
-<body class="debug">
-    <header class="container-fluid">
-        <div class="row p-3">
+<body class="offwhite">
+    <header class="container-fluid bg-dark">
+        <div class="row p-3 text-light">
             <div class="col-12">
                 <div class="text-center">
                     <i class="mdi mdi-cat"></i>
@@ -45,41 +45,67 @@
                     </p>
                 </div>
                 <div class="text-center">
-                    <button class="btn">
+                    <button class="btn btn-light">
                         Get Started
                     </button>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-2 text-center p-4">
+        <div class="row align-items-center container-card">
+            <div class="col-12 col-md-2 p-4 text-center">
                 <i class="mdi mdi-cat"></i>
             </div>
-            <div class="col-10 justify-content-center">
-                <button>
-                    Home
-                </button>
-                <button>
-                    About
-                </button>
-                <button>
-                    Services
-                </button>
-                <button>
-                    Portfolio
-                </button>
-                <button>
-                    Team
-                </button>
-                <button>
-                    Pricing
-                </button>
-                <button>
-                    Drop-nothing
-                </button>
-                <button>
-                    Content
-                </button>
+            <div class="col-12 col-md-10">
+                <div class="row justify-content-between">
+                    <div class="col-2 col-md-1">
+                        <p class="selectable">
+                            Home
+                        </p>
+                    </div>
+
+                    <div class="col-2 col-md-1">
+                        <p class="selectable">
+                            About
+                        </p>
+                    </div>
+
+                    <div class="col-2 col-md-1">
+                        <p class="selectable">
+                            Services
+                        </p>
+                    </div>
+
+                    <div class="col-2 col-md-1">
+                        <p class="selectable">
+                            Portfolio
+                        </p>
+                    </div>
+
+                    <div class="col-2 col-md-1">
+                        <p class="selectable">
+                            Team
+                        </p>
+                    </div>
+
+                    <div class="col-2 col-md-1">
+                        <p class="selectable">
+                            Pricing
+                        </p>
+                    </div>
+
+                    <div class="col-2 col-md-1">
+                        <p class="selectable">
+                            Drop-nothing
+                        </p>
+                    </div>
+
+                    <div class="col-2 col-md-1">
+                        <p class="selectable">
+                            Content
+                        </p>
+                    </div>
+
+                </div>
             </div>
         </div>
     </header>
@@ -89,7 +115,7 @@
 
     <main class="container-fluid">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 text-center p-3">
                 <h2>
                     About Us
                 </h2>
@@ -99,15 +125,40 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
-                IMG HERE
+            <div class="col-6 img-format">
+                <img class="img-fluid "
+                    src="https://plus.unsplash.com/premium_photo-1661494404655-184173876637?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b2ZmaWNlJTIwbWVldGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
             </div>
             <div class="col-6">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur earum error corrupti.</p>
-                <div>icon and p here</div>
-                <div>icon and p here</div>
-                <div>icon and p here</div>
+                <h3 class="fst-italic">Lorem ipsum dolor sit amet.</h3>
+                <p class="small-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur earum error
+                    corrupti.
+                </p>
+                <div class="row">
+                    <div class="col-2">
+                        <i class="mdi mdi-check-all"></i>
+                    </div>
+                    <div class="col-10">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <i class="mdi mdi-check-all"></i>
+                    </div>
+                    <div class="col-10">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <i class="mdi mdi-check-all"></i>
+                    </div>
+                    <div class="col-10">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repellendus recusandae commodi
                     velit delectus id minima perspiciatis, facere vero necessitatibus tempore atque error doloribus
                     cumque dicta ipsum deleniti ex dolore.</p>
@@ -121,7 +172,7 @@
 
 
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 text-center">
                 <h2>SERVICES</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, adipisci.</p>
             </div>
@@ -136,39 +187,53 @@
         <div class="row">
             <div class="col-6">
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-2">icon</div>
+                    <div class="row align-items-center">
+                        <div class="col-2 fs-2 text-danger">
+                            <i class="mdi mdi-file"></i>
+                        </div>
                         <div class="col-10">
                             <h5>Lorem, ipsum dolor.</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, iste.</p>
+                            <p class="small-font">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum,
+                                iste.</p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-2">icon</div>
+                    <div class="row align-items-center">
+                        <div class="col-2 fs-2 text-danger">
+                            <i class="mdi mdi-file"></i>
+                        </div>
                         <div class="col-10">
                             <h5>Lorem, ipsum dolor.</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, iste.</p>
+                            <p class="small-font">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum,
+                                iste.</p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-2">icon</div>
+                    <div class="row align-items-center">
+                        <div class="col-2 fs-2 text-danger">
+                            <i class="mdi mdi-file"></i>
+                        </div>
                         <div class="col-10">
                             <h5>Lorem, ipsum dolor.</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, iste.</p>
+                            <p class="small-font">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum,
+                                iste.</p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-2">icon</div>
+                    <div class="row align-items-center">
+                        <div class="col-2 fs-2 text-danger">
+                            <i class="mdi mdi-file"></i>
+                        </div>
                         <div class="col-10">
                             <h5>Lorem, ipsum dolor.</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, iste.</p>
+                            <p class="small-font">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum,
+                                iste.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-6">
-                IMAGE HERE
+            <div class="col-6 text-center">
+                <img class="img-fluid"
+                    src="https://images.unsplash.com/photo-1584722065553-3ca71026f32c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2V5Ym9hcmQlMjBoYW5kc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="keyboard hands">
             </div>
         </div>
 
@@ -178,55 +243,71 @@
 
 
         <div class="row">
-            <div class="col-6">IMAGE HERE</div>
-            <div class="col-6">
-                <div>
+            <div class="col-6 text-center">
+                <img class="img-fluid"
+                    src="https://images.unsplash.com/photo-1494558244524-50f5d84bbdcf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWFuJTIwb24lMjBsaWdodGJ1bGJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+            </div>
+            <div class="col-6 p-4">
+                <div class="container-card">
                     <h5>Lorem, ipsum.</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <p class="small-font">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
                 </div>
                 <div>
                     <h5>Lorem, ipsum.</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <p class="small-font">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
                 </div>
                 <div>
                     <h5>Lorem, ipsum.</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <p class="small-font">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
                 </div>
                 <div>
                     <h5>Lorem, ipsum.</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <p class="small-font">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-7">
+            <div class="col-7 p-5">
                 <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam delectus vel unde earum repudiandae
                     quidem numquam molestiae dicta optio aperiam.</p>
                 <div class="container-card">
-                    <div class="row">
-                        <div class="col-1">1</div>
+                    <div class="row color-green p-2 container-card">
+                        <div class="col-1">01</div>
                         <div class="col-10">Lorem ipsum dolor sit amet.</div>
-                        <div class="col-1">icon</div>
+                        <div class="col-1">
+                            <i class="mdi mdi-chevron-up"></i>
+                        </div>
+                    </div>
+                    <div class="row p-2 container-card">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi ipsum perspiciatis natus iusto
+                        nostrum pariatur voluptatibus saepe amet repellendus magni! Vel assumenda impedit ipsa amet
+                        labore ducimus delectus repellendus illum.
                     </div>
                 </div>
                 <div class="container-card">
-                    <div class="row">
-                        <div class="col-1">1</div>
+                    <div class="row p-2 container-card">
+                        <div class="col-1 color-green">02</div>
                         <div class="col-10">Lorem ipsum dolor sit amet.</div>
-                        <div class="col-1">icon</div>
+                        <div class="col-1">
+                            <i class="mdi mdi-chevron-down"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="container-card">
-                    <div class="row">
-                        <div class="col-1">1</div>
+                    <div class="row p-2">
+                        <div class="col-1 color-green">03</div>
                         <div class="col-10">Lorem ipsum dolor sit amet.</div>
-                        <div class="col-1">icon</div>
+                        <div class="col-1">
+                            <i class="mdi mdi-chevron-down"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-5">
-                VIDEO HERE
+            <div class="col-5 img-fluid">
+                <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=859&q=80"
+                    alt="">
             </div>
         </div>
 
@@ -236,7 +317,7 @@
 
 
 
-        <div class="row">
+        <div class="row text-center bg-dark text-light">
             <div class="col-12">
                 <i class="mdi mdi-help-circle-outline"></i>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vitae nulla distinctio molestias ipsam
@@ -258,14 +339,14 @@
 
 
 
-        <div class="row">
+        <div class="row text-center">
             <div class="col-12">
                 <h2>Pricing</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, sint.</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-3">
+        <div class="row text-center justify-content-around">
+            <div class="col-3 container-card">
                 <h2>blah</h2>
                 <div>
                     <p>Lorem.</p>
@@ -278,7 +359,7 @@
                     </button>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-3 container-card">
                 <h6>
                     recomended
                 </h6>
@@ -294,7 +375,7 @@
                     </button>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-3 container-card">
                 <h2>blah</h2>
                 <div>
                     <p>Lorem.</p>
@@ -311,7 +392,7 @@
 
 
 
-        <div class="row">
+        <div class="row text-center">
             <div class="col-12">
                 <h2>CONTACT</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -320,25 +401,31 @@
 
 
 
-        <div class="row">
-            <div class="col-4">
+        <div class="row justify-content-around">
+            <div class="col-4 container-card">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-2">icon</div>
+                        <div class="col-2">
+                            <i class="mdi mdi-pin"></i>
+                        </div>
                         <div class="col-10">
                             <h5>Lorem, ipsum dolor.</h5>
                             <p>Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-2">icon</div>
+                        <div class="col-2">
+                            <i class="mdi mdi-email"></i>
+                        </div>
                         <div class="col-10">
                             <h5>Lorem, ipsum dolor.</h5>
                             <p>Lorem ipsum dolor sit.</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-2">icon</div>
+                        <div class="col-2">
+                            <i class="mdi mdi-phone"></i>
+                        </div>
                         <div class="col-10">
                             <h5>Lorem, ipsum dolor.</h5>
                             <p>Lorem ipsum dolor sit.</p>
@@ -346,7 +433,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 container-card">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-5">
@@ -378,14 +465,14 @@
 
 
 
-    <footer class="container-fluid">
-        <div class="row">
+    <footer class="container-fluid text-center bg-dark text-light">
+        <div class="row justify-content-center">
             <div class="col-5">
                 <i class="mdi mdi-cat"></i>
                 <h1>CAT</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti quo amet laboriosam.</p>
                 <p>Enter your email
-                    <button class="btn">
+                    <button class="btn btn-light">
                         Subscribe</button>
                 </p>
                 <div>
