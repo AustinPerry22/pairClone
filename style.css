@@ -2,11 +2,7 @@
     --offwhite: rgb(214, 214, 214);
 }
 
-@media(min-width:768px) {
-    .color-green {
-        color: red;
-    }
-}
+
 
 
 button {
@@ -35,4 +31,23 @@ body {
 
 .color-green {
     color: rgb(143, 199, 58);
+}
+
+
+
+/*NOTE: always put your media queries at the button so classes that you create do not overrrrrride them */
+
+@media(max-width:768px) {
+    .color-green {
+        color: red;
+    }
+
+    img {
+        width: 200%;
+        height: 200%;
+        /*position: absolute;
+        top: -10vh;*/
+    }
+
+
 }
